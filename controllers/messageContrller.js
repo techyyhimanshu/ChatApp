@@ -2,7 +2,7 @@ const express = require('express');
 const { User,Message } = require('../models');
 const { QueryTypes } = require('sequelize');
 const users = {};
-
+//test comment
 const registerUser = (username, socket) => {
     console.log(`User ${username} connected with socket ID ${socket.id}`);
     users[username] = socket.id;
